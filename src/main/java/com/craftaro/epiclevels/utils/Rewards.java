@@ -3,6 +3,7 @@ package com.craftaro.epiclevels.utils;
 import com.craftaro.core.compatibility.ServerVersion;
 import com.craftaro.core.hooks.EconomyManager;
 import com.craftaro.core.math.Eval;
+import com.craftaro.core.math.MathUtils;
 import com.craftaro.third_party.com.cryptomorin.xseries.XSound;
 import com.craftaro.core.utils.TextUtils;
 import com.craftaro.epiclevels.EpicLevels;
@@ -51,7 +52,7 @@ public class Rewards {
                                 player.getWorld().dropItemNaturally(player.getLocation(), itemStack));
                         break;
                     case "ECONOMY":
-                        EconomyManager.deposit(player, Double.parseDouble(line.replace("$", "")));
+                        EconomyManager.deposit(player, MathUtils.eval(line.replace("$", "")));
                         break;
                     case "HEAL":
                         if (ServerVersion.isServerVersionAtLeast(ServerVersion.V1_9)) {
