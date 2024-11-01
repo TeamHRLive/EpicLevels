@@ -4,12 +4,21 @@ import com.craftaro.core.database.MySQLConnector;
 import com.craftaro.epiclevels.EpicLevels;
 import com.craftaro.epiclevels.boost.Boost;
 import com.craftaro.epiclevels.players.EPlayer;
+import com.craftaro.third_party.org.jooq.DeleteUsingStep;
+import com.craftaro.third_party.org.jooq.Query;
 import com.craftaro.third_party.org.jooq.Record;
-import com.craftaro.third_party.org.jooq.*;
+import com.craftaro.third_party.org.jooq.Result;
+import com.craftaro.third_party.org.jooq.SelectSelectStep;
 import com.craftaro.third_party.org.jooq.impl.DSL;
+import com.craftaro.third_party.org.jooq.impl.SQLDataType;
 import org.bukkit.entity.Player;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 import java.util.function.Consumer;
 
 public class DataHelper {
@@ -248,7 +257,7 @@ public class DataHelper {
                         .set(DSL.field("uuid"), uuid == null ? null : uuid.toString())
                         .set(DSL.field("expiration"), boost.getExpiration())
                         .set(DSL.field("multiplier"), boost.getMultiplier())
-                        .returning(DSL.field("id"))
+                        .returning(DSL.field("id", SQLDataType.INTEGER.identity(true)))
                         .fetch();
 
                 int boostId = insertedBoost.get(0).get("id", int.class);

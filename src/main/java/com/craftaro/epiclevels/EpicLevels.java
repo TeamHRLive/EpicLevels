@@ -4,7 +4,6 @@ import com.craftaro.core.SongodaCore;
 import com.craftaro.core.SongodaPlugin;
 import com.craftaro.core.commands.CommandManager;
 import com.craftaro.core.compatibility.MajorServerVersion;
-import com.craftaro.core.compatibility.ServerVersion;
 import com.craftaro.core.configuration.Config;
 import com.craftaro.core.database.DatabaseConnector;
 import com.craftaro.core.gui.GuiManager;
@@ -24,6 +23,7 @@ import com.craftaro.epiclevels.commands.CommandShow;
 import com.craftaro.epiclevels.commands.CommandTakeExp;
 import com.craftaro.epiclevels.database.DataHelper;
 import com.craftaro.epiclevels.database.migrations._1_InitialMigration;
+import com.craftaro.epiclevels.database.migrations._2_MakeBoostTableAutoIncrementMigration;
 import com.craftaro.epiclevels.killstreaks.KillstreakManager;
 import com.craftaro.epiclevels.levels.LevelManager;
 import com.craftaro.epiclevels.listeners.DeathListeners;
@@ -39,7 +39,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class EpicLevels extends SongodaPlugin {
@@ -142,7 +141,7 @@ public class EpicLevels extends SongodaPlugin {
 
     @Override
     public void onDataLoad() {
-        initDatabase(Collections.singletonList(new _1_InitialMigration(this)));
+        initDatabase(new _1_InitialMigration(), new _2_MakeBoostTableAutoIncrementMigration());
         this.dataHelper = new DataHelper(this);
 
         this.dataHelper.getPlayers((player) -> this.playerManager.addPlayers(player));

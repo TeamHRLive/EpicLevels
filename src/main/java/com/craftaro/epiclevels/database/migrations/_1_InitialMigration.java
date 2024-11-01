@@ -1,27 +1,18 @@
 package com.craftaro.epiclevels.database.migrations;
 
 import com.craftaro.core.database.DataMigration;
-import com.craftaro.core.database.MySQLConnector;
-import com.craftaro.epiclevels.EpicLevels;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 public class _1_InitialMigration extends DataMigration {
-    private final EpicLevels plugin;
-
-    public _1_InitialMigration(EpicLevels plugin) {
+    public _1_InitialMigration() {
         super(1);
-
-        this.plugin = plugin;
     }
 
     @Override
     public void migrate(Connection connection, String tablePrefix) throws SQLException {
-        String autoIncrement = /*this.plugin.getDatabaseConnector() instanceof MySQLConnector ? " AUTO_INCREMENT" :*/ "";
-
-        // Create 'players' table
         try (Statement statement = connection.createStatement()) {
             statement.execute("CREATE TABLE " + tablePrefix + "players (" +
                     "uuid VARCHAR(36) PRIMARY KEY, " +
@@ -34,10 +25,9 @@ public class _1_InitialMigration extends DataMigration {
                     ")");
         }
 
-        // Create 'boosts' table
         try (Statement statement = connection.createStatement()) {
             statement.execute("CREATE TABLE " + tablePrefix + "boosts (" +
-                    "id INTEGER PRIMARY KEY" + autoIncrement + ", " +
+                    "id INTEGER PRIMARY KEY AUTO_INCREMENT, " +
                     "uuid VARCHAR(36), " +
                     "expiration BIGINT NOT NULL," +
                     "multiplier DOUBLE NOT NULL " +
