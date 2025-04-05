@@ -1,6 +1,6 @@
 package com.craftaro.epiclevels.managers;
 
-import com.craftaro.core.configuration.Config;
+import com.songoda.core.configuration.Config;
 import org.bukkit.entity.EntityType;
 import org.bukkit.plugin.Plugin;
 

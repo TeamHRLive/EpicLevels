@@ -1,6 +1,6 @@
 package com.craftaro.epiclevels.listeners;
 
-import com.craftaro.core.utils.TextUtils;
+import com.songoda.core.utils.TextUtils;
 import com.craftaro.epiclevels.EpicLevels;
 import com.craftaro.epiclevels.killstreaks.Killstreak;
 import com.craftaro.epiclevels.players.EPlayer;

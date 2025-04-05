@@ -1,8 +1,8 @@
 package com.craftaro.epiclevels.database;
 
-import com.craftaro.core.database.DatabaseConnector;
-import com.craftaro.core.locale.Message;
-import com.craftaro.core.utils.TimeUtils;
+import com.songoda.core.database.DatabaseConnector;
+import com.songoda.core.locale.Message;
+import com.songoda.core.utils.TimeUtils;
 import com.craftaro.epiclevels.EpicLevels;
 import com.craftaro.epiclevels.boost.Boost;
 import org.bukkit.Bukkit;

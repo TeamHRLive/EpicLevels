@@ -1,11 +1,11 @@
 package com.craftaro.epiclevels.utils;
 
-import com.craftaro.core.compatibility.ServerVersion;
-import com.craftaro.core.hooks.EconomyManager;
-import com.craftaro.core.math.Eval;
-import com.craftaro.core.math.MathUtils;
-import com.craftaro.third_party.com.cryptomorin.xseries.XSound;
-import com.craftaro.core.utils.TextUtils;
+import com.songoda.core.compatibility.ServerVersion;
+import com.songoda.core.hooks.EconomyManager;
+import com.songoda.core.math.Eval;
+import com.songoda.core.math.MathUtils;
+import com.songoda.third_party.com.cryptomorin.xseries.XSound;
+import com.songoda.core.utils.TextUtils;
 import com.craftaro.epiclevels.EpicLevels;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;

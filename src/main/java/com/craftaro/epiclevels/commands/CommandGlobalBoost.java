@@ -1,7 +1,7 @@
 package com.craftaro.epiclevels.commands;
 
-import com.craftaro.core.commands.AbstractCommand;
-import com.craftaro.core.utils.TimeUtils;
+import com.songoda.core.commands.AbstractCommand;
+import com.songoda.core.utils.TimeUtils;
 import com.craftaro.epiclevels.EpicLevels;
 import com.craftaro.epiclevels.boost.Boost;
 import org.bukkit.Bukkit;

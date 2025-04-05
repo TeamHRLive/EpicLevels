@@ -1,6 +1,6 @@
 package com.craftaro.epiclevels.tasks;
 
-import com.craftaro.core.compatibility.MajorServerVersion;
+import com.songoda.core.compatibility.MajorServerVersion;
 import com.craftaro.epiclevels.EpicLevels;
 import com.craftaro.epiclevels.settings.Settings;
 import org.bukkit.Bukkit;

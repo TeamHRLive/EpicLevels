@@ -1,6 +1,6 @@
 package com.craftaro.epiclevels.commands;
 
-import com.craftaro.core.commands.AbstractCommand;
+import com.songoda.core.commands.AbstractCommand;
 import com.craftaro.epiclevels.EpicLevels;
 import com.craftaro.epiclevels.gui.GUILevels;
 import com.craftaro.epiclevels.players.EPlayer;

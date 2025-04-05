@@ -1,13 +1,13 @@
 package com.craftaro.epiclevels;
 
-import com.craftaro.core.SongodaCore;
-import com.craftaro.core.SongodaPlugin;
-import com.craftaro.core.commands.CommandManager;
-import com.craftaro.core.compatibility.MajorServerVersion;
-import com.craftaro.core.configuration.Config;
-import com.craftaro.core.database.DatabaseConnector;
-import com.craftaro.core.gui.GuiManager;
-import com.craftaro.core.hooks.EconomyManager;
+import com.songoda.core.SongodaCore;
+import com.songoda.core.SongodaPlugin;
+import com.songoda.core.commands.CommandManager;
+import com.songoda.core.compatibility.MajorServerVersion;
+import com.songoda.core.configuration.Config;
+import com.songoda.core.database.DatabaseConnector;
+import com.songoda.core.gui.GuiManager;
+import com.songoda.core.hooks.EconomyManager;
 import com.craftaro.epiclevels.boost.BoostManager;
 import com.craftaro.epiclevels.commands.CommandAddExp;
 import com.craftaro.epiclevels.commands.CommandBoost;
@@ -34,7 +34,7 @@ import com.craftaro.epiclevels.players.PlayerManager;
 import com.craftaro.epiclevels.settings.Settings;
 import com.craftaro.epiclevels.tasks.BoostTask;
 import com.craftaro.epiclevels.tasks.ModifierTask;
-import com.craftaro.third_party.com.cryptomorin.xseries.XMaterial;
+import com.songoda.third_party.com.cryptomorin.xseries.XMaterial;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 

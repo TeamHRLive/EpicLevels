@@ -1,16 +1,16 @@
 package com.craftaro.epiclevels.database;
 
-import com.craftaro.core.database.MySQLConnector;
+import com.songoda.core.database.MySQLConnector;
 import com.craftaro.epiclevels.EpicLevels;
 import com.craftaro.epiclevels.boost.Boost;
 import com.craftaro.epiclevels.players.EPlayer;
-import com.craftaro.third_party.org.jooq.DeleteUsingStep;
-import com.craftaro.third_party.org.jooq.Query;
-import com.craftaro.third_party.org.jooq.Record;
-import com.craftaro.third_party.org.jooq.Result;
-import com.craftaro.third_party.org.jooq.SelectSelectStep;
-import com.craftaro.third_party.org.jooq.impl.DSL;
-import com.craftaro.third_party.org.jooq.impl.SQLDataType;
+import com.songoda.third_party.org.jooq.DeleteUsingStep;
+import com.songoda.third_party.org.jooq.Query;
+import com.songoda.third_party.org.jooq.Record;
+import com.songoda.third_party.org.jooq.Result;
+import com.songoda.third_party.org.jooq.SelectSelectStep;
+import com.songoda.third_party.org.jooq.impl.DSL;
+import com.songoda.third_party.org.jooq.impl.SQLDataType;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;

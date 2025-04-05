@@ -1,6 +1,6 @@
 package com.craftaro.epiclevels.players;
 
-import com.craftaro.core.math.MathUtils;
+import com.songoda.core.math.MathUtils;
 import com.craftaro.epiclevels.EpicLevels;
 import com.craftaro.epiclevels.boost.Boost;
 import com.craftaro.epiclevels.levels.Level;

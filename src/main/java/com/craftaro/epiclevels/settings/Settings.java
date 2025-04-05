@@ -1,9 +1,9 @@
 package com.craftaro.epiclevels.settings;
 
-import com.craftaro.core.compatibility.CompatibleMaterial;
-import com.craftaro.core.configuration.Config;
-import com.craftaro.core.configuration.ConfigSetting;
-import com.craftaro.core.hooks.EconomyManager;
+import com.songoda.core.compatibility.CompatibleMaterial;
+import com.songoda.core.configuration.Config;
+import com.songoda.core.configuration.ConfigSetting;
+import com.songoda.core.hooks.EconomyManager;
 import com.craftaro.epiclevels.EpicLevels;
 
 import java.util.Arrays;
