@@ -75,7 +75,7 @@ public class PlaceholderManager extends PlaceholderExpansion {
 
     @Override
     public @NotNull String getAuthor() {
-        return "Craftaro";
+        return "Songoda";
     }
 
     @Override

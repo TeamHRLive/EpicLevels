@@ -19,7 +19,7 @@ public class CommandHelp extends AbstractCommand {
     protected ReturnType runCommand(CommandSender sender, String... args) {
         sender.sendMessage("");
         this.instance.getLocale().newMessage("&7Version " + this.instance.getDescription().getVersion()
-                + " Created with <3 by &5&l&oCraftaro").sendPrefixedMessage(sender);
+                + " Created with <3 by &5&l&oSongoda").sendPrefixedMessage(sender);
         sender.sendMessage("");
         sender.sendMessage(TextUtils.formatText("&7Welcome to EpicLevels! To get started try using the /levels command to access the leaderboard."));
         sender.sendMessage("");
